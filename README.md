@@ -2,7 +2,7 @@
 
 The getNumOfLines method processes the files sequentially, meaning that it reads one file completely before moving on to the next. This means that the running time of this method will be approximately the sum of the running times of each individual file.
 
-The getNumOfLinesThreads method uses a separate thread to process each file, which allows the files to be processed in parallel. This means that the running time of this method will be approximately the running time of the longest-running file, rather than the sum of the running times of all the files. This can be more efficient if the files are of roughly similar size and the system has sufficient resources (e.g., CPU cores) to process them concurrently.
+The getNumOfLinesThreads method uses a separate thread to process each file, which allows the files to be processed in parallel. This means that the running time of this method will be approximately the running time of the longest-running file, rather than the sum of the running times of all the files. 
 
 The getNumOfLinesThreadPool method also uses a thread pool to process the files in parallel, but it creates a thread pool with the same size as the number of files being processed. This means that each file will be processed by a separate thread, which is similar to the behavior of the getNumOfLinesThreads method. However, the getNumOfLinesThreadPool method has the added overhead of creating and shutting down the thread pool, which may make it slightly less efficient than the getNumOfLinesThreads method.
 
