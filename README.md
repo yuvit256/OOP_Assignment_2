@@ -9,7 +9,7 @@ The getNumOfLinesThreadPool method also uses a thread pool to process the files 
 Overall, the running time of each method will depend on the number and size of the files being processed, as well as the system's resources and the specific implementation of the method. In general, using multiple threads or a thread pool can be more efficient than processing the files sequentially if the system has sufficient resources and the workload is well-suited to parallelization.
 
 ## The UML:
-![Alt text](/home/yuval/Documents/Lightshot)
+![Alt text](umlproj2.PNG.png)
 
 ## Part2:
 
